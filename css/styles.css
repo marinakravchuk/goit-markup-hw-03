@@ -157,6 +157,10 @@ button {
 
 
 /*Заголовки */
+.hero-block {
+    text-align: center;
+} 
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -172,25 +176,36 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-.conteiner > .about-us-title {
-    text-align: center;
-}
-
-.about-us-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-}
-
-.name-position
 
 
 /*Страница "Главная"*/
-.hero-block {
-    text-align: center;
+
+.benefit-block>.benefit {
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.benefit .item {
+        display: flex;
+            flex-wrap: wrap;
+    flex-basis: calc(100% / 4);
+}
+
+
+.about-us-block>.our-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-work>.work-list {
+    display: flex;
+    flex-basis: calc(100% / 3);
+}
+
+.about-us-block>.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+} 
 .about-us .name {
     font-style: normal;
     font-weight: 500;
@@ -205,35 +220,20 @@ button {
     line-height: 1.14;
     color: #757575;
 }
-
-.benefit-block >.benefit {
-    display: flex;
-    flex-wrap: wrap;
+.conteiner>.about-us-title {
+    text-align: center;
 }
 
-.benefit > .item {
-    flex-basis: calc(100% / 4);
+.about-us-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
 }
-.conteiner > .about-us-list {
-        display: flex;
-        flex-wrap: wrap;
-}
+.about-us-list>.list {}
 
-.about-us-list > .list {
 
-}
-
-.conteiner>.our-work {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.our-work>.work-list {
-    display: flex;
-    
-    flex-basis: calc(100% / 3);
-
-}
 
 /*Страница "Портфолио"*/
 .site-nav .site-nav-btn {
