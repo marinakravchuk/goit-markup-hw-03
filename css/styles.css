@@ -2,8 +2,27 @@
 .site-nav-link {
     text-decoration: none;
     font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    color:#212121
+    }
+
+    .site-nav-link:hover,
+    .site-nav-link:focus {
+        color: #2196F3;
+    }
+.site-nav {
+    display: flex;
 }
 
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
 
 .e-link {
     text-decoration: none;
@@ -141,6 +160,33 @@ button {
     color: #757575;
 }
 
+.conteiner >.benefit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit > .item {
+    flex-basis: calc(100% / 4);
+}
+.conteiner > .about-us-list {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.about-us-list > .list {
+
+}
+
+.conteiner>.our-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-work>.work-list {
+
+
+}
+
 /*Страница "Портфолио"*/
 .site-nav .site-nav-btn {
 
@@ -173,7 +219,27 @@ button {
     text-transform: uppercase;
 }
 
-.feature-list > .
+.comteiner  {
+    width: ;
+    padding-left: ;
+    padding-right: ;
+
+    margin-left: ;
+    margin-right: ;
+    background-color: ;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.feature-list > .item {
+    margin-left: 215px;
+    margin-top: 262px;
+    flex-basis: calc(100% / 3) ;
+}
 
 /* Текст */
 .contact-link,
