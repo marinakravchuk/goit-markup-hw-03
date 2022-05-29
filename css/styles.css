@@ -33,6 +33,7 @@
 /*Header-Контактные линки */
 .header-contact-link {
     display:flex;
+    margin-left: 331px;
 
     color: #757575;
 
@@ -94,6 +95,7 @@
 
 .site-nav {
     display: flex;
+    margin-left: 93px;
 }
 
 .site-nav .item {
@@ -133,13 +135,15 @@ button {
 }
 
 .hero-botton {
+    
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     color: #FFFFFF;
-    ;
     background: #2196F3;
+    
 }
 
 .site-nav .site-nav-btn:hover,
@@ -150,12 +154,20 @@ button {
 
 
 /*Заголовки */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .hero-titel {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-us-title {
@@ -166,6 +178,9 @@ button {
 }
 
 /*Страница "Главная"*/
+.hero-block {
+    text-align: center;
+}
 
 .about-us .name {
     font-style: normal;
