@@ -135,15 +135,18 @@ button {
 }
 
 .hero-botton {
-    
+    width: 200px;
+    height: 50px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     color: #FFFFFF;
-    background: #2196F3;
-    
 }
 
 .site-nav .site-nav-btn:hover,
@@ -169,6 +172,9 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
+.conteiner > .about-us-title {
+    text-align: center;
+}
 
 .about-us-title {
     font-style: normal;
@@ -176,6 +182,9 @@ button {
     font-size: 36px;
     line-height: 1.16;
 }
+
+.name-position
+
 
 /*Страница "Главная"*/
 .hero-block {
@@ -197,7 +206,7 @@ button {
     color: #757575;
 }
 
-.conteiner >.benefit {
+.benefit-block >.benefit {
     display: flex;
     flex-wrap: wrap;
 }
@@ -220,7 +229,9 @@ button {
 }
 
 .our-work>.work-list {
-
+    display: flex;
+    
+    flex-basis: calc(100% / 3);
 
 }
 
