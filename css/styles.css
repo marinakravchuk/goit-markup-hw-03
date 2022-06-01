@@ -72,6 +72,11 @@
     text-decoration: none;
     font-style: normal;
 }
+
+li {
+    list-style-type: none;
+}
+
 /*Корекция дефолтных настроек линок */
 .contact-links{
     display: flex;
@@ -112,10 +117,6 @@
     margin-right: 0;
 }
 
-/*Корекция дефолтных настроек списков */
-li {
-    list-style-type: none;
-}
 
 /*Основные: цвет и текст */
 body {
@@ -123,7 +124,12 @@ body {
     color: #212121;
 }
 
-
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
 /* Кнопки */
@@ -253,7 +259,7 @@ button {
     font-size: 14px;
     line-height: 1.14;
     color: #212121;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
 }
 
 .site-mrc-bnt:hover,
@@ -263,8 +269,12 @@ button {
 }
 
 
-/*Заголовки */
+
 .hero-block {
+    padding-top: 200px;
+    padding-bottom: 200px
+    margin-left: auto;
+    margin-right: auto;
     width: 1600px;
     height: 600px;
     left: 0px;
@@ -275,10 +285,8 @@ button {
     background-color: #2F303A;
 } 
 
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
+
+/*Заголовки */
 
 .hero-titel {
     font-style: normal;
@@ -307,8 +315,24 @@ button {
     flex-basis: calc(100% / 4);
 }
 
+.our-work {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-.about-us-block>.our-work {
+.about-our-work{
+    background: #FFFFFF;
+    padding-top: 47px;
+    padding-bottom: 94px;
+}
+
+.about-us-block {
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.about-our-work>.our-work {
     display: flex;
     flex-wrap: wrap;
 }
@@ -316,6 +340,10 @@ button {
 .our-work>.work-list {
     display: flex;
     flex-basis: calc(100% / 3);
+}
+.about-us-list{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-us-block>.about-us-list {
@@ -347,7 +375,17 @@ button {
     font-size: 36px;
     line-height: 1.16;
 }
-.about-us-list>.list {}
+.about-us-list>.list {
+    display: flex;
+    flex-basis: calc(100% / 4);
+}
+
+.about-us-list>.name-position {
+    display: flex;
+    flex-basis: calc(100% / 4);
+
+}
+
 
 
 
@@ -431,12 +469,29 @@ button {
     font-size: 14px;
     line-height: 1.14;
     color: #757575;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 9px;
 }
 
 .addres-link {
+    text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
     color: #ffffff;
+    display: block;
+    padding-top: 9px;
+    /*padding-bottom: 60px; /*дописать что нижнее тоже 9 для второго но для последнего 60*/
 }
+
+.footer{
+    background: #2F303A;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 1628px;
+}
+
+
