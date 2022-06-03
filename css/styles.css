@@ -6,6 +6,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .logo {
@@ -14,6 +15,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
     color: #000000;
 }
 
@@ -21,7 +23,6 @@
     color: #ffffff;
         }
 
-}
 
 /*Header-Навигация */
 .site-nav-bnt {
@@ -47,6 +48,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .header-contact-link .item {
@@ -58,6 +60,11 @@
 }
 
 .header-contact-link .e-link:hover,
+.header-contact-link .e-link:focus {
+    color: #2196F3;
+}
+
+.header-contact-link .ph-link:hover,
 .header-contact-link .ph-link:focus {
     color: #2196F3;
 }
@@ -159,6 +166,7 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
 }
 
@@ -174,6 +182,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
 }
@@ -195,6 +204,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
 }
@@ -216,6 +226,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
 }
@@ -237,6 +248,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
 }
@@ -258,6 +270,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background-color: #F5F4FA;
 }
@@ -293,6 +306,7 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: #FFFFFF;
@@ -355,6 +369,7 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
 .about-us .text {
@@ -362,6 +377,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 .conteiner>.about-us-title {
@@ -396,6 +412,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
 }
@@ -404,12 +421,14 @@ button {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .feature-list .text {
     font-style: normal;
     font-size: 16px;
     line-height: 2.25;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 
@@ -418,6 +437,7 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -450,6 +470,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 
@@ -460,6 +481,7 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .e-link,
@@ -468,6 +490,7 @@ button {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #757575;
     display: block;
     padding-top: 20px;
@@ -480,6 +503,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #ffffff;
     display: block;
     padding-top: 9px;
