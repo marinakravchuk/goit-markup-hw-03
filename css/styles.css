@@ -12,7 +12,7 @@
     --default-white: #ffffff;
     --font-size: 14px;
     --bg-color: #2F303A;
-
+    --set-gap: 30px
 }
 
 /*Основные: цвет и текст */
@@ -110,19 +110,22 @@ li {
 
 /*Header-Навигация */
 .site-nav {
+    display: flex;
+    justify-content: center;
+
+
     font-style: normal;
     font-weight: 500;
     font-size: var(--font-size);
     line-height: 1.14;
-    margin-left: 92px;
     }
 
 
 .site-nav:hover,
-.site-nav:focus
- {
+.site-nav:focus {
     color: var(--btn-color-hb);
 }
+
 .site-nav
 .header-contact-link {
     padding: 0;
@@ -130,7 +133,25 @@ li {
     
     }
 
-        
+    .site-nav:first-child {
+        margin-left: 93px;
+    }
+    
+    .site-nav .item {
+        margin-right: 50px;
+    }
+    
+    .header-contact-link .item:last-child {
+        margin-right: 0;
+    }
+    
+    .site-nav .current {
+        color: var(--btn-color-hb);
+    }
+
+
+
+
 /*Header-Контактные линки */
 .header-contact-link {
     margin-left: auto;
@@ -171,6 +192,7 @@ li {
     
 }
 
+/*Ссылки в шапке*/
 .site-nav-link {
     display: flex;
     
@@ -189,29 +211,6 @@ li {
     .site-nav-link:focus {
         color: var(--btn-color-hb);
     }
-
-
-
-.site-nav {
-    display: flex;
-}
-
-.site-nav:first-child {
-    margin-left: 93px;
-}
-
-.site-nav .item {
-    margin-right: 50px;
-}
-
-.header-contact-link .item:last-child {
-    margin-right: 0;
-}
-
-.site-nav .current {
-    color: var(--btn-color-hb);
-}
-
 
 
 /* Кнопки-Главная */
@@ -300,6 +299,14 @@ button {
     margin-top: -30px;
     margin-left: -30px;
 }
+.benefit-list .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 
 .benefit-list .item {
     display: flex;
@@ -364,7 +371,7 @@ button {
 
 .about-us-block>.about-us-list {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .about-us .name {
@@ -372,6 +379,8 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+        
     
 }
 
@@ -396,25 +405,49 @@ button {
 }
 
 .about-us-list>.list {
-    display: flex;
     width: 270px;
-    height: 260px;
-    flex-basis: calc(100% / 4);
+    margin-right: 30px;
+    background-color: #fff;
+}
+.name-position {
+    margin: 30px 70px;
 }
 
-.about-us-list>.name-position {
+/*.about-us-list>.name-position {
     display: flex;
     align-self:flex-end;
     flex-basis: calc(100% / 4);
 
-}
+}*/
 
+/*Страница "Портфолио"*/
 
 /* Кнопки-Портфолио */
+.card-nav-list {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-nav-list .item {
+     margin: 94px 4px 50px;
+}
+
+.card-nav-list .site-nav-btn {
+
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+}
+
 .site-all-bnt {
     width: 73px;
     height: 38px;
-
+    display: block;
+  
 
     border-radius: 4px;
 
@@ -436,8 +469,7 @@ button {
 .site-web-bnt {
     width: 128px;
     height: 38px;
-
-
+        
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -458,8 +490,7 @@ button {
 .site-app-bnt {
     width: 145px;
     height: 38px;
-
-
+    
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -480,8 +511,7 @@ button {
 .site-dzn-bnt {
     width: 103px;
     height: 38px;
-
-
+    
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -502,8 +532,7 @@ button {
 .site-mrc-bnt {
     width: 130px;
     height: 38px;
-
-
+    
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -521,60 +550,42 @@ button {
     background: var(--btn-color-hb);
 }
 
-/*Страница "Портфолио"*/
-.site-nav .site-nav-btn {
 
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: #212121;
-    background: #F5F4FA;
+/*Карточки*/
+.set-list {
+    display: flex;
+    flex-wrap: wrap;
+margin-top: calc(-1 *var(--set-gap));
+margin-left: calc(-1 *var(--set-gap));
 }
 
-.feature-list .title {
+.card-thumb{
+outline: 1px solid red;
+}
+.card-content {
+    padding: 20px 24px;
+}
+
+.set-list .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.feature-list .text {
+.set-list .text {
     font-style: normal;
     font-size: 16px;
     line-height: 2.25;
     color: var(--text-color);
 }
 
-.benefit-list .title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: var(--font-size);
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
 
-.comteiner  {
-    width: ;
-    padding-left: ;
-    padding-right: ;
-
-    margin-left: ;
-    margin-right: ;
-    background-color: ;
-}
-
-.feature-list {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.feature-list > .item {
-    margin-left: 215px;
-    margin-top: 262px;
-    flex-basis: calc(100% / 3) ;
+.set-list>.item {
+    margin-top: var(--set-gap);
+    margin-left: var(--set-gap);
+    flex-basis: calc(100% / 3 -30px);
+    outline: 1px solid red;
 }
 
 /* Текст */
