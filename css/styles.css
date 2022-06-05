@@ -3,7 +3,7 @@
 *::after {
     box-sizing: border-box
 }
-/* Кнопки */
+/* Переменные */
 :root {
     --text-color: #757575;
     --bnt-color-hover: #F5F4FA;
@@ -11,6 +11,7 @@
     --btn-color-text: #212121;
     --default-white: #ffffff;
     --font-size: 14px;
+    --bg-color: #2F303A;
 
 }
 
@@ -218,23 +219,21 @@ button {
     cursor: pointer;
     border: none;
 }
+ .hero {
+   /* padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--hero-background-color);*/
+ }
 
-.hero {
-    background-color: #2F303A;
+
+.hero .conteiner {
+    background-color: var(--bg-color);
     text-align: center;
     width: 1600px;
     height: 600px;
-    justify-content: center'
-
+    margin: 0 auto;
 }
 
-/*.hero-block {
-    display: flex;
-    align-items: center;
-    
-
-    
-}*/
 
 .hero-titel {
 width: 696px;
@@ -590,13 +589,13 @@ width: 696px;
 
 /*Подвал*/
     .s-footer {
-        background: #2F303A;
+        background: var(--bg-color);
         padding-top: 60px;
         padding-bottom: 60px;
         }
 
-    .contact-link-list .item :first-child {
-        padding-top: 20px;
+    .contact-link-list .item:first-child {
+        margin-top: 20px;
         padding-bottom: 9px;
     }
             
