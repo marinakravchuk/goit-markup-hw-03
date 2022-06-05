@@ -38,7 +38,7 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red
+    /*outline: 1px solid red*/
 }
 
 /*Утилиты*/
@@ -287,10 +287,10 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+/*
 .benefit-block {
         outline: 1px solid red
-} 
+} */
 
 
 .benefit-list {
@@ -325,112 +325,94 @@ button {
 }
 /*Чем мы занимаемся*/
 
-.s-about-our-work {
-    padding: 94px 0;
-    
-}
+
 
 .about-our-work>.our-work-list {
     display: flex;
 
 }
-.work {
-    margin-bottom: 50px;
-}
 
 .our-work-list .work-item+.work-item {
     flex-basis: calc(100% / 3 -30px);
-
 }
+/*
 .our-work-list>.work-item {
-    margin-right: 30px;
-}
-
-/*.work-item:not(:last-child) {
     margin-right: 30px;
 }*/
 
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 /*Команда*/
+.about-us{
+    display: block;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+}
+
 .about-us-title {
     text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-}
+    color: var(--btn-color-text);
 
-.about-us {
     padding-top: 94px;
-    padding-bottom: 94px;
-    background: #F5F4FA;
+    padding-bottom: 50px;
 }
-
 .about-us-list {
-    display: flex;
-    margin-top: calc(-1 *var(--set-gap));
-    margin-left: calc(-1 *var(--set-gap));
+        display: flex;
+        
 }
 
-.about-us-list>.list {
-    width: 270px;
+.about-us-list .list {
+    display: block;
     margin-right: 30px;
-    background-color: #fff;
-        margin-top: var(--set-gap);
-            margin-left: var(--set-gap);
-            flex-basis: calc(100% / 3 -30px);
-            outline: 1px solid red;
 }
 
-.about-us .name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    /*text-align: center;*/
+.w-card{
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1635px;
+    
+    background-color: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
-
-.about-us .text {
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.14;
-    color: var(--text-color);
-}
-
-
+/*
 .w-card-thumb {
     outline: 1px solid red;
 }
+*/
 .name-position {
-    outline: 1px solid red;
+    margin-top: 30px;
+    /*outline: 1px solid red;*/
 }
-.name-position .text {
+
+.about-us .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.about-us .text {
+    display: block;
     margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--text-color);
 }
 
-
-
-/*.imag {
-    margin-bottom: 30px;
-}*/
-
-/*.work-item:last-child {
-    margin-right: 0;
-} */
-
-
-
-
-.name-position {
-    margin: 30px 70px;
-}
-
-.about-us-list>.name-position {
-    display: flex;
-    align-self:flex-end;
-    flex-basis: calc(100% / 4);
-
-}
+.work-item:last-child {
+    margin-right: 0;}
 
 /*Страница "Портфолио"*/
 
@@ -457,7 +439,7 @@ button {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--btn-color-text);
     background: #F5F4FA;
 }
 
@@ -466,7 +448,6 @@ button {
     height: 38px;
     display: block;
   
-
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -487,7 +468,7 @@ button {
 .site-web-bnt {
     width: 128px;
     height: 38px;
-        
+    
     border-radius: 4px;
 
     font-family: 'Roboto';
@@ -570,7 +551,7 @@ button {
 
 
 /*Карточки*/
-.set{padding-top: 94px;
+.set{
     padding-bottom: 94px;
 }
 
@@ -588,6 +569,7 @@ margin-left: calc(-1 *var(--set-gap));
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    align-items: center;
 }
 
 .set-list .text {
@@ -602,7 +584,7 @@ margin-left: calc(-1 *var(--set-gap));
     margin-top: var(--set-gap);
     margin-left: var(--set-gap);
     flex-basis: calc(100% / 3 -30px);
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 /* Текст */
@@ -635,10 +617,7 @@ margin-left: calc(-1 *var(--set-gap));
         margin-top: 20px;
         padding-bottom: 9px;
     }
-            
-    
-
-
+          
 .bottom-logo-color {
     color: #ffffff;
     text-decoration: none;
