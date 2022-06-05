@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
 /* Кнопки */
 :root {
     --text-color: #757575;
@@ -13,23 +18,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--btn-color-text);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 .conteiner {
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     outline: 1px solid red
 }
-
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 
 /*Утилиты*/
 .h-e-link,
@@ -48,6 +54,11 @@ body {
     font-style: normal;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
 li {
     list-style-type: none;
@@ -78,8 +89,7 @@ li {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-}
+    }
 
 .logo {
     text-decoration: none;
@@ -87,7 +97,6 @@ li {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     color: #000000;
 }
 
@@ -113,8 +122,6 @@ li {
 
     margin-left: 92px;
     }
-
-}
 
 
 .site-nav:hover,
@@ -221,17 +228,45 @@ button {
     cursor: pointer;
     border: none;
 }
+
 .hero {
-padding: 200px 0;
+    background-color: #2F303A;
+    text-align: center;
+
+}
+
+.hero-block {
+    /*display: flex;
+    align-items: center;
+    margin-bottom: 300px;*/
+
+    
+}
+
+.hero-titel {
+width: 696px;
+    padding-top: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase
 }
 
 .hero-botton {
     width: 200px;
     height: 50px;
 
+
     background: var(--btn-color-hb);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
 
     font-family: 'Roboto';
     font-style: normal;
@@ -241,6 +276,142 @@ padding: 200px 0;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
+
+
+/*Страница "Главная"*/
+.s-benefit {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.benefit-block {
+        outline: 1px solid red
+} 
+
+
+.benefit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.benefit .item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 75px;
+    flex-basis: calc(100% / 4 -30px);
+    margin-left: 30px;
+}
+
+.benefit .text {
+    padding-bottom: 94px;
+}
+/*Чем мы занимаемся*/
+
+.our-work {
+    display: flex;
+}
+.s-about-our-work {
+    padding: 94px 0;
+    background: #FFFFFF;
+}
+
+.work {
+    margin-bottom: 50px;
+}
+
+.our-work .work-item+.work-item {
+    flex-basis: calc(100% / 3 -30px);
+
+}
+
+/*.work-item:not(:last-child) {
+    margin-right: 30px;
+}*/
+
+
+/*Команда*/
+.about-us {
+    padding: 94px 0;
+    background: #F5F4FA;
+}
+
+.imag {
+    margin-bottom: 30px;
+}
+
+.about-our-work>.our-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-work>.work-item {
+    display: flex;
+    flex-basis: calc(100% / 3);
+  /*  margin-left: 30px;
+    margin-right: 50px;*/
+
+}
+
+.about-us-list {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-us-block>.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us .name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    
+}
+
+.about-us .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    color: var(--text-color);
+}
+
+.c-site-nav>.about-us-title {
+    text-align: center;
+}
+
+.about-us-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    
+}
+
+.about-us-list>.list {
+    display: flex;
+    width: 270px;
+    height: 260px;
+    flex-basis: calc(100% / 4);
+}
+
+.about-us-list>.name-position {
+    display: flex;
+    align-self:flex-end;
+    flex-basis: calc(100% / 4);
+
+}
+
 
 /* Кнопки-Портфолио */
 .site-all-bnt {
@@ -353,132 +524,6 @@ padding: 200px 0;
     background: var(--btn-color-hb);
 }
 
-
-
-.hero-block {
-    padding-top: 200px;
-    padding-bottom: 200px
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    
-    text-align: center;
-
-    background-color: #2F303A;
-} 
-
-
-/*Заголовки */
-
-.hero-titel {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-}
-
-
-/*Страница "Главная"*/
-
-.benefit-block>.benefit {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.benefit .item {
-        display: flex;
-            flex-wrap: wrap;
-    flex-basis: calc(100% / 4);
-}
-
-.our-work {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.about-our-work{
-    background: #FFFFFF;
-    padding-top: 47px;
-    padding-bottom: 94px;
-}
-
-.about-us-block {
-    background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 47px;
-}
-
-.about-our-work>.our-work {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.our-work>.work-list {
-    display: flex;
-    flex-basis: calc(100% / 3);
-}
-.about-us-list{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.about-us-block>.about-us-list {
-    display: flex;
-    flex-wrap: wrap;
-} 
-.about-us .name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-}
-
-.about-us .text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: var(--font-size);
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
-.c-site-nav>.about-us-title {
-    text-align: center;
-}
-
-.about-us-title {
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
-.about-us-list>.list {
-    display: flex;
-    flex-basis: calc(100% / 4);
-}
-
-.about-us-list>.name-position {
-    display: flex;
-    flex-basis: calc(100% / 4);
-
-}
-
-
-
-
 /*Страница "Портфолио"*/
 .site-nav .site-nav-btn {
 
@@ -502,7 +547,6 @@ padding: 200px 0;
     font-style: normal;
     font-size: 16px;
     line-height: 2.25;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
 
@@ -538,17 +582,41 @@ padding: 200px 0;
 }
 
 /* Текст */
-.header-contact-link,
+.header-contact-link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--text-color);
+        padding-top: 5px;
+    }
+
+
 .benefit .text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: var(--text-color);
+    padding-top: 10px;
+    
 }
 
 /*Подвал*/
+    .s-footer {
+        background: #2F303A;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+
+    .contact-link .item :first-child {
+        padding-top: 20px;
+        padding-bottom: 9px;
+    }
+            
+    
+
+
 .bottom-logo-color {
     color: #ffffff;
     text-decoration: none;
@@ -566,11 +634,14 @@ padding: 200px 0;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
     display: block;
-    padding-top: 20px;
+    
     padding-bottom: 9px;
 }
 
+
+ /*подрезать в будущем */
 .contact-link .e-link:hover,
 .contact-link .e-link:focus {
     color: var(--btn-color-hb);
@@ -588,23 +659,14 @@ padding: 200px 0;
 
 .addres-link {
     text-decoration: none;
+
     font-style: normal;
     font-weight: 400;
     font-size: var(--font-size);
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: #ffffff;
-    
-    
-        /*padding-bottom: 60px; /*дописать что нижнее тоже 9 для второго но для последнего 60*/
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
     }
     
-    .footer {
-        background: #2F303A;
-        width: 1600px;
-        height: 252px;
-        left: 0px;
-        top: 1628px;
-    }
 
 
