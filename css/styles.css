@@ -409,8 +409,6 @@ button {
 /*Страница "Портфолио"*/
 
 /* Кнопки-Портфолио */
-
-
 .card-nav-list {
     display: flex;
     justify-content: center;
@@ -547,21 +545,7 @@ button {
         padding-right: 15px;
 
 }
-.card {
-    width: 370px;
-    height: 404px;
-    box-shadow: var(--card-shadow);
-    border-radius: 0px 0px 4px 4px;
-    overflow: hidden;
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
 
-}
-
-.card-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .set{
     padding-bottom: 94px;
@@ -571,16 +555,15 @@ button {
 .set-list {
 display: flex;
 flex-wrap: wrap;
-margin-top: calc(-1 *var(--set-gap));
-margin-left: calc(-1 *var(--set-gap));
+
 }
 
 .set-list>.item {
-    display: block;
-    flex-basis: calc(100% / 3);
-    padding-right: 30px;
-    padding-bottom: 30px;
-    outline: 1px solid red;
+   
+    margin-right: 30px;
+    margin-bottom: 30px;
+    /*outline: 1px solid red;*/
+    
 }
 
 .set-list .item:nth-child(3n) {
@@ -596,7 +579,7 @@ margin-left: calc(-1 *var(--set-gap));
     line-height: 2;
     letter-spacing: 0.06em;
     align-items: center;
-    outline: 1px solid red;
+   /* outline: 1px solid red;*/
 }
 
 .set-list .text {
@@ -606,6 +589,23 @@ margin-left: calc(-1 *var(--set-gap));
     font-size: 16px;
     line-height: 2.25;
     color: var(--text-color);
+}
+/* CARD */
+
+.card {
+    width: 370px;
+    height: 404px;
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+
+}
+
+.card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
