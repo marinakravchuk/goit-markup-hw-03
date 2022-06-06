@@ -539,12 +539,14 @@ button {
 
 
 /*Карточки*/
-/*.c-card-set {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
+.c-card-set {
+    width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 
-}*/
+}
 .card {
     width: 370px;
     height: 404px;
@@ -560,6 +562,7 @@ button {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .set{
     padding-bottom: 94px;
 }
@@ -576,7 +579,13 @@ margin-left: calc(-1 *var(--set-gap));
     display: block;
     flex-basis: calc(100% / 3);
     padding-right: 30px;
+    padding-bottom: 30px;
     outline: 1px solid red;
+}
+
+.set-list .item:nth-child(3n) {
+    margin-right: 0px;
+    padding-right: 0px;
 }
 
 .set-list .title {
