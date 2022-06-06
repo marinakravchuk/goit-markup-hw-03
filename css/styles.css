@@ -536,14 +536,25 @@ button {
 
 
 /*Карточки*/
+.c-card-set {
+
+}
+
 .card {
+    width: 370px;
+    height: 404px;
     box-shadow: var(--card-shadow);
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+
 }
 
+.card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .set{
     padding-bottom: 94px;
 }
@@ -552,20 +563,20 @@ button {
 .set-list {
 display: flex;
 flex-wrap: wrap;
-margin-top: calc(-1 *var(--set-gap));
-margin-left: calc(-1 *var(--set-gap));
+/*margin-top: calc(-1 *var(--set-gap));
+margin-left: calc(-1 *var(--set-gap));*/
 }
 
 .set-list>.item {
     display: block;
-    margin-top: var(--set-gap);
-    margin-left: var(--set-gap);
-    flex-basis: calc(100% / 3 -30px);
+    flex-basis: calc(100% / 3);
+    padding-left: 30px;
     outline: 1px solid red;
 }
 
 .set-list .title {
-    margin-top: 20px;
+   /* margin-top: 20px;*/
+    padding-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -575,12 +586,14 @@ margin-left: calc(-1 *var(--set-gap));
 }
 
 .set-list .text {
-    margin: 4px;
+   /* margin: 4px;*/
+   padding-left: 24px;
     font-style: normal;
     font-size: 16px;
     line-height: 2.25;
     color: var(--text-color);
 }
+
 
 /* Текст */
 .header-contact-link{
