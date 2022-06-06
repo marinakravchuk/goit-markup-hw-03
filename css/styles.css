@@ -222,7 +222,6 @@ button {
     border: none;
 }
  .hero {
-   /padding-top: 200px;
     padding-bottom: 200px;
     background-color:  var(--bg-color);
  }
@@ -233,16 +232,6 @@ button {
         margin: 0 auto;
         
 }
-
-
-/*.hero .conteiner {
-    
-    text-align: center;
-    width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-}*/
-
 
 .hero-titel {
     width: 696px;
@@ -325,8 +314,6 @@ button {
 }
 /*Чем мы занимаемся*/
 
-
-
 .about-our-work>.our-work-list {
     display: flex;
 
@@ -348,6 +335,8 @@ button {
 /*Команда*/
 .about-us{
     display: block;
+    max-width: 1600px;
+        margin: 0 auto;
     padding-bottom: 94px;
     background: #F5F4FA;
 }
@@ -417,11 +406,7 @@ button {
 /*Страница "Портфолио"*/
 
 /* Кнопки-Портфолио */
-.card {
-    box-shadow: var(--card-shadow);
-    border-radius: 0px 0px 4px 4px;
-    overflow: hidden;
-}
+
 
 .card-nav-list {
     display: flex;
@@ -551,40 +536,50 @@ button {
 
 
 /*Карточки*/
+.card {
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
 .set{
     padding-bottom: 94px;
 }
 
 
 .set-list {
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 margin-top: calc(-1 *var(--set-gap));
 margin-left: calc(-1 *var(--set-gap));
 }
 
+.set-list>.item {
+    display: block;
+    margin-top: var(--set-gap);
+    margin-left: var(--set-gap);
+    flex-basis: calc(100% / 3 -30px);
+    outline: 1px solid red;
+}
 
 .set-list .title {
+    margin-top: 20px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     align-items: center;
+    outline: 1px solid red;
 }
 
 .set-list .text {
+    margin: 4px;
     font-style: normal;
     font-size: 16px;
     line-height: 2.25;
     color: var(--text-color);
-}
-
-
-.set-list>.item {
-    margin-top: var(--set-gap);
-    margin-left: var(--set-gap);
-    flex-basis: calc(100% / 3 -30px);
-    /*outline: 1px solid red;*/
 }
 
 /* Текст */
@@ -608,6 +603,8 @@ margin-left: calc(-1 *var(--set-gap));
 
 /*Подвал*/
     .s-footer {
+        max-width: 1600px;
+        margin: 0 auto;
         background: var(--bg-color);
         padding-top: 60px;
         padding-bottom: 60px;
