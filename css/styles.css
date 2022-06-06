@@ -313,6 +313,9 @@ button {
     padding-bottom: 94px;
 }
 /*Чем мы занимаемся*/
+.about-our-work {
+    padding-bottom: 94px;
+}
 
 .about-our-work>.our-work-list {
     display: flex;
@@ -536,10 +539,12 @@ button {
 
 
 /*Карточки*/
-.c-card-set {
+/*.c-card-set {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
 
-}
-
+}*/
 .card {
     width: 370px;
     height: 404px;
@@ -563,14 +568,14 @@ button {
 .set-list {
 display: flex;
 flex-wrap: wrap;
-/*margin-top: calc(-1 *var(--set-gap));
-margin-left: calc(-1 *var(--set-gap));*/
+margin-top: calc(-1 *var(--set-gap));
+margin-left: calc(-1 *var(--set-gap));
 }
 
 .set-list>.item {
     display: block;
     flex-basis: calc(100% / 3);
-    padding-left: 30px;
+    padding-right: 30px;
     outline: 1px solid red;
 }
 
