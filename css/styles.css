@@ -402,12 +402,13 @@ button {
     margin-right: 0;}
 
 /*Страница "Портфолио"*/
-
-/* Кнопки-Портфолио */
-.nav{
+.set {
     border-top: 1px solid #ECECEC;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+/* Кнопки-Портфолио */
 
 .card-nav-list {
     display: flex;
@@ -417,7 +418,7 @@ button {
 }
 
 .card-nav-list .item {
-     margin-left:  8px ;
+     margin-bottom:  56px ;
 }
 
 .card-nav-list .site-nav-btn {
@@ -453,10 +454,7 @@ button {
 }
 
 /*Карточки*/
-.set{
-    padding-top: 56px;
-    padding-bottom: 94px;
-}
+
 
 .set-list {
 display: flex;
@@ -465,8 +463,8 @@ flex-wrap: wrap;
 
 .set-list>.item {
 flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     /*outline: 1px solid red;*/
 }
 
