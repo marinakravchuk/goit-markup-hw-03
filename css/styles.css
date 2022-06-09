@@ -464,8 +464,8 @@ flex-wrap: wrap;
 
 .set-list>.item {
 flex-basis: calc(100% / 3 - 30px);
-    padding-right: 30px;
-    padding-bottom: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     /*outline: 1px solid red;*/
 }
 
