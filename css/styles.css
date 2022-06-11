@@ -381,6 +381,10 @@ button {
     /*outline: 1px solid red;*/
 }
 
+.name-position .name {
+    margin-bottom: 10px;
+}
+
 .about-us .name {
     font-weight: 500;
     font-size: 16px;
@@ -390,7 +394,6 @@ button {
 
 .about-us .text {
     display: block;
-    margin-top: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
