@@ -333,7 +333,6 @@ button {
 /*Команда*/
 .about-us{
     display: block;
-    max-width: 1600px;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -416,12 +415,12 @@ button {
 .card-nav-list {
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 50px;
     
 }
 
 .card-nav-list .item {
-     margin-bottom:  56px ;
+
     margin-left: 8px;
 }
 
@@ -533,7 +532,6 @@ flex-basis: calc(100% / 3 - 30px);
 
 /*Подвал*/
     .s-footer {
-    max-width: 1600px;
     margin: 0 auto;
     background: var(--bg-color);
     padding-top: 60px;
